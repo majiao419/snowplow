@@ -143,6 +143,10 @@ module SnowPlow
         # Add to our jobflow
         @jobflow.add_step(copy_to_s3_step)
 
+        unless config[:skip].include?('shred')
+          # Add shredding code
+        end
+
       end
 
       # Run (and wait for) the daily ETL job.
