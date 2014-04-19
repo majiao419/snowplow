@@ -3,7 +3,7 @@ GEM
   specs:
     builder (3.2.2)
     contracts (0.2.4)
-    elasticity (3.0.2)
+    elasticity (3.0.3)
       fog (~> 1.0)
       nokogiri (~> 1.0)
       rest-client (~> 1.0)
@@ -39,5 +39,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  elasticity (~> 3.0.2)
+  elasticity (~> 3.0.3)
   sluice (~> 0.1.5)
