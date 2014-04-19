@@ -83,9 +83,6 @@ module SnowPlow
         end
         config[:maxmind_asset] = "%sthird-party/maxmind/GeoLiteCity.dat" % asset_host
 
-        # Construct our path to S3DistCp
-        config[:s3distcp_asset] = "/home/hadoop/lib/emr-s3distcp-1.0.jar"
-
         # Construct path to our Hadoop ETL
         config[:hadoop_asset] = "%s3-enrich/hadoop-etl/snowplow-hadoop-etl-%s.jar" % [
                                   config[:s3][:buckets][:assets],
